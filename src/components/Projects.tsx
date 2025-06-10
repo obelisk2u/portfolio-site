@@ -1,5 +1,5 @@
 import React from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Projects: React.FC = () => {
   const projects = [
@@ -41,10 +41,7 @@ const Projects: React.FC = () => {
         "A machine learning pipeline for forecasting power outages from extreme weather events, integrating multi-year storm and outage datasets with predictive modeling, threshold tuning, and interactive performance diagnostics.",
       image: "../../public/dynamicrythms.png",
       technologies: ["PyTorch", "Python", "Jupyter", "Scikit-Learn", "XGBoost"],
-      github: "#",
-      live: "#",
-      stars: 67,
-      forks: 15,
+      github: "https://github.com/obelisk2u/DynamicRythms",
     },
   ];
 
@@ -77,12 +74,6 @@ const Projects: React.FC = () => {
                     className="bg-[#0a0a0a] p-2 rounded-full hover:bg-gray-700 transition-colors"
                   >
                     <Github className="h-5 w-5" />
-                  </a>
-                  <a
-                    href={project.live}
-                    className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors"
-                  >
-                    <ExternalLink className="h-5 w-5" />
                   </a>
                 </div>
               </div>

@@ -37,10 +37,12 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl">
-            <Download className="h-5 w-5" />
-            <span>Download Resume</span>
-          </button>
+          <a href="../../public/Jordan Stout Resume 2025.pdf" download>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl">
+              <Download className="h-5 w-5" />
+              <span>Download Resume</span>
+            </button>
+          </a>
         </div>
 
         <div className="flex justify-center space-x-6 mb-16">
