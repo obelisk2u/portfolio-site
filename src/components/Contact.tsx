@@ -1,32 +1,8 @@
-import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
+import React from "react";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 import { FaDiscord } from "react-icons/fa";
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // Reset form
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
-
   return (
     <section id="contact" className="py-20 bg-[#0a0a0a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
