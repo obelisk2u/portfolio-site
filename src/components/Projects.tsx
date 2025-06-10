@@ -13,7 +13,7 @@ const Projects: React.FC = () => {
         "FastAPI",
         "AWS S3",
         "DynamoDB",
-        "OpenAI",
+        "TypeScript",
         "Pinecone",
       ],
       github: "https://github.com/jordanstout/Echos-App",
@@ -42,6 +42,14 @@ const Projects: React.FC = () => {
       image: "../../public/dynamicrythms.png",
       technologies: ["PyTorch", "Python", "Jupyter", "Scikit-Learn", "XGBoost"],
       github: "https://github.com/obelisk2u/DynamicRythms",
+    },
+    {
+      title: "SimuFlow",
+      description:
+        "A NumPy-based 2D CFD solver for incompressible flow and scalar transport around obstacles, featuring modular mesh generation, pressure–velocity coupling, and visualization through static and animated field diagnostics.",
+      image: "../../public/simuflow.png",
+      technologies: ["NumPy", "Matplotlib", "Python", "CFD", "Simulation"],
+      github: "https://github.com/obelisk2u/SimuFlow",
     },
   ];
 
