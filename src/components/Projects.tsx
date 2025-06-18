@@ -1,24 +1,26 @@
 import React from "react";
 import { Github } from "lucide-react";
+import { SiHuggingface } from "react-icons/si";
 
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "Echos: AI Audio Intelligence",
+      title: "PoissoNet",
       description:
-        "A full-stack AI-powered platform that transcribes, summarizes, and analyzes audio content. Built with Remix, FastAPI, and AWS, it features real-time transcription, and document chat with RAG.",
-      image: "../../EchosDocChat.png",
+        "A physics-constrained U-Net surrogate that learns to solve the 2D pressure Poisson equation on complex masks, with automated data generation and fast GPU inference.",
+      image: "../../public/poissonet.png",
       technologies: [
-        "Remix",
-        "FastAPI",
-        "AWS S3",
-        "DynamoDB",
-        "TypeScript",
-        "Pinecone",
+        "PyTorch",
+        "NumPy",
+        "Matplotlib",
+        "CUDA",
+        "Deep Learning",
+        "CFD",
+        "Hugging Face",
       ],
-      github: "https://github.com/jordanstout/Echos-App",
+      github: "https://github.com/obelisk2u/PoissoNet",
+      huggingface: "https://huggingface.co/obelisk2u/PoissoNet",
     },
-
     {
       title: "JSkill",
       description:
@@ -34,7 +36,21 @@ const Projects: React.FC = () => {
       ],
       github: "https://github.com/obelisk2u/JSkill",
     },
-
+    {
+      title: "SimuFlow",
+      description:
+        "A NumPy-based 2D CFD solver for incompressible flow and scalar transport around obstacles, featuring modular mesh generation, pressure–velocity coupling, and visualization through static and animated field diagnostics.",
+      image: "../../public/simuflow.png",
+      technologies: [
+        "NumPy",
+        "SciPy",
+        "Matplotlib",
+        "Python",
+        "CFD",
+        "Simulation",
+      ],
+      github: "https://github.com/obelisk2u/SimuFlow",
+    },
     {
       title: "Dynamic Rhythms ML Challenge",
       description:
@@ -44,12 +60,19 @@ const Projects: React.FC = () => {
       github: "https://github.com/obelisk2u/DynamicRythms",
     },
     {
-      title: "SimuFlow",
+      title: "Echos: AI Audio Intelligence",
       description:
-        "A NumPy-based 2D CFD solver for incompressible flow and scalar transport around obstacles, featuring modular mesh generation, pressure–velocity coupling, and visualization through static and animated field diagnostics.",
-      image: "../../public/simuflow.png",
-      technologies: ["NumPy", "Matplotlib", "Python", "CFD", "Simulation"],
-      github: "https://github.com/obelisk2u/SimuFlow",
+        "A full-stack AI-powered platform that transcribes, summarizes, and analyzes audio content. Built with Remix, FastAPI, and AWS, it features real-time transcription, and document chat with RAG.",
+      image: "../../EchosDocChat.png",
+      technologies: [
+        "Remix",
+        "FastAPI",
+        "AWS S3",
+        "DynamoDB",
+        "TypeScript",
+        "Pinecone",
+      ],
+      github: "https://github.com/jordanstout/Echos-App",
     },
   ];
 
@@ -77,12 +100,29 @@ const Projects: React.FC = () => {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <a
-                    href={project.github}
-                    className="bg-[#0a0a0a] p-2 rounded-full hover:bg-gray-700 transition-colors"
-                  >
-                    <Github className="h-5 w-5" />
-                  </a>
+                  {/* GitHub link (shown if provided) */}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#0a0a0a] p-2 rounded-full hover:bg-gray-700 transition-colors"
+                    >
+                      <Github className="h-5 w-5" />
+                    </a>
+                  )}
+
+                  {/* Hugging Face link (shown only for PoissoNet) */}
+                  {project.huggingface && (
+                    <a
+                      href={project.huggingface}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#0a0a0a] p-2 rounded-full hover:bg-gray-700 transition-colors"
+                    >
+                      <SiHuggingface className="h-5 w-5 text-yellow-400" />
+                    </a>
+                  )}
                 </div>
               </div>
 
