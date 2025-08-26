@@ -4,30 +4,6 @@ import { Briefcase, Calendar, MapPin, Award } from "lucide-react";
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: "Founder",
-      company: "Echos",
-      location: "Boston, MA",
-      period: "Feburary 2025 - Present",
-      description:
-        "Designed and built a full-stack AI-powered transcription and reporting platform. Integrated cloud services, vector search, and LLMs to deliver personalized summaries and chat experiences.",
-      achievements: [
-        "Engineered a modular web app with audio recording, transcription, and PDF report generation",
-        "Integrated OpenAI and Pinecone to implement RAG-based document chat with user-specific context",
-        "Optimized transcription latency and storage by streaming large audio files to AWS S3 with multipart uploads",
-      ],
-      technologies: [
-        "React",
-        "TypeScript",
-        "FastAPI",
-        "Python",
-        "AWS S3",
-        "DynamoDB",
-        "Pinecone",
-        "LangChain",
-        "OpenAI",
-      ],
-    },
-    {
       title: "Lead Data Science Intern",
       company: "Fidelity",
       location: "Boston, MA",
@@ -50,6 +26,21 @@ const Experience: React.FC = () => {
     },
     {
       title: "Software Engineer",
+      company: "True Engineering",
+      location: "Cambridge, MA",
+      period: "January 2024 - September 2024",
+      description:
+        "Contributed to naval data integration projects by automating data translation pipelines and supporting deployment of TrueNumbers in operational environments. Worked directly with senior naval personnel to debug systems and guide non-technical stakeholders in adopting new tools.",
+      achievements: [
+        "Developed Python scripts to automate conversion of live-streamed naval data into JSON and proprietary formats, saving 100+ hours weekly",
+        "Collaborated with naval personnel at Point Loma to debug and integrate TrueNumbers into operational pipelines",
+        "Trained and supported non-technical stakeholders in understanding TrueNumbers’ UI and data model",
+      ],
+      technologies: ["Python", "JSON", "Data Integration", "Automation"],
+    },
+
+    {
+      title: "Research Software Engineer",
       company: "Raytheon Intelligence & Space",
       location: "Cambridge, MA",
       period: "June 2022 - June 2023",

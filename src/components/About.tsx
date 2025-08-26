@@ -29,7 +29,7 @@ const About: React.FC = () => {
             </div>
             <div className="flex items-center space-x-3 text-gray-300">
               <MapPin className="h-5 w-5 text-blue-400" />
-              <span>Based in Boston, MA (but proud Los Angelino)</span>
+              <span>Based in Boston, MA (but proud Angeleno)</span>
             </div>
             <div className="flex items-center space-x-3 text-gray-300">
               <Calendar className="h-5 w-5 text-blue-400" />
@@ -50,22 +50,21 @@ const About: React.FC = () => {
 
             <div className="pt-6">
               <p className="text-gray-300 leading-relaxed mb-4">
-                I'm a full-stack developer and statistical practitioner with a
-                strong foundation in both scientific computing and data science.
-                I have a particularly strong background in defense research.
-              </p>
-              <p className="text-gray-300 leading-relaxed mb-4">
-                With a background in physics and computer science, and a
-                master's in statistical practice from Boston University, I’ve
-                contributed to projects spanning AI infrastructure, interactive
-                web platforms, and applied machine learning at organizations
-                like Fidelity, Raytheon BBN, and True Engineering.
+                I’m a software and machine learning engineer with a strong
+                foundation in computational physics, statistics, and scientific
+                computing. With a B.S. in Physics and Computer Science and an
+                M.S. in Statistical Practice from Boston University, I’ve
+                contributed to projects spanning numerical methods, AI systems,
+                and defense applications at organizations like Raytheon BBN and
+                True Engineering.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                Outside of work, I explore probabilistic modeling, open-source
-                tools, and ranking systems in competitive games. I'm also always
-                up for experimenting with new tech and refining how people
-                interact with data.
+                Outside of formal roles, I explore probabilistic modeling,
+                large-scale simulation, and applied ML for scientific domains,
+                with projects in computational fluid dynamics, astrophysics, and
+                power outage prediction. I’m particularly interested in applying
+                my skills at the intersection of statistical sciences,
+                computational methods, and national security challenges.
               </p>
             </div>
           </div>

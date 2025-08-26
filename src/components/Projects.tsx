@@ -22,19 +22,18 @@ const Projects: React.FC = () => {
       huggingface: "https://huggingface.co/obelisk2u/PoissoNet",
     },
     {
-      title: "JSkill",
+      title: "PINN-Poisson",
       description:
-        "A skill rating simulator that visualizes and compares TrueSkill and ELO rating systems in real time. Includes match simulation, expectation propegation visualization, and statistical convergence plots.",
-      image: "../../public/JSkillPreview.png",
+        "A Physics-Informed Neural Network that solves the 2D Poisson equation on the unit square with zero-Dirichlet boundaries, trained purely from PDE and boundary constraints without solver-generated labels.",
+      image: "../../public/pinn-poisson.png",
       technologies: [
-        "Go",
-        "Statistics",
-        "React",
-        "TypeScript",
-        "Shadcn/UI",
-        "TailwindCSS",
+        "PyTorch",
+        "NumPy",
+        "Matplotlib",
+        "Physics-Informed Learning",
+        "PDEs",
       ],
-      github: "https://github.com/obelisk2u/JSkill",
+      github: "https://github.com/obelisk2u/pinn-poisson",
     },
     {
       title: "SimuFlow",
@@ -50,6 +49,21 @@ const Projects: React.FC = () => {
         "Simulation",
       ],
       github: "https://github.com/obelisk2u/SimuFlow",
+    },
+    {
+      title: "JSkill",
+      description:
+        "A skill rating simulator that visualizes and compares TrueSkill and ELO rating systems in real time. Includes match simulation, expectation propegation visualization, and statistical convergence plots.",
+      image: "../../public/JSkillPreview.png",
+      technologies: [
+        "Go",
+        "Statistics",
+        "React",
+        "TypeScript",
+        "Shadcn/UI",
+        "TailwindCSS",
+      ],
+      github: "https://github.com/obelisk2u/JSkill",
     },
     {
       title: "Dynamic Rhythms ML Challenge",

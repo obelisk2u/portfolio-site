@@ -27,17 +27,17 @@ const Hero: React.FC = () => {
             Jordan Stout
           </h1>
           <p className="text-xl md:text-2xl text-blue-400 font-medium mb-6">
-            Full-Stack Software Engineer
+            Software & ML Engineer
           </p>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Passionate about creating innovative solutions and building scalable
-            applications that make a difference. Specialized in modern web
-            technologies and cloud architecture.
+            Focused on advancing AI systems and computational methods with
+            real-world impact, experienced in platforms across defense,
+            research, and enterprise.
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <a href="../../public/Jordan Stout Resume 2025.pdf" download>
+          <a href="../../public/Jordan Stout Resume.pdf" download>
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 flex items-center space-x-2 shadow-lg hover:shadow-xl">
               <Download className="h-5 w-5" />
               <span>Download Resume</span>
