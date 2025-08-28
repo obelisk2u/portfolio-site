@@ -8,7 +8,7 @@ const Projects: React.FC = () => {
       title: "PoissoNet",
       description:
         "A physics-constrained U-Net surrogate that learns to solve the 2D pressure Poisson equation on complex masks, with automated data generation and fast GPU inference.",
-      image: "../../public/poissonet.png",
+      image: "../../poissonet.png",
       technologies: [
         "PyTorch",
         "NumPy",
@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
       title: "PINN-Poisson",
       description:
         "A Physics-Informed Neural Network that solves the 2D Poisson equation on the unit square with zero-Dirichlet boundaries, trained purely from PDE and boundary constraints without solver-generated labels.",
-      image: "../../public/pinn-poisson.png",
+      image: "../../pinn-poisson.png",
       technologies: [
         "PyTorch",
         "NumPy",
@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       title: "SimuFlow",
       description:
         "A NumPy-based 2D CFD solver for incompressible flow and scalar transport around obstacles, featuring modular mesh generation, pressure–velocity coupling, and visualization through static and animated field diagnostics.",
-      image: "../../public/simuflow.png",
+      image: "../../simuflow.png",
       technologies: [
         "NumPy",
         "SciPy",
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
       title: "JSkill",
       description:
         "A skill rating simulator that visualizes and compares TrueSkill and ELO rating systems in real time. Includes match simulation, expectation propegation visualization, and statistical convergence plots.",
-      image: "../../public/JSkillPreview.png",
+      image: "../../JSkillPreview.png",
       technologies: [
         "Go",
         "Statistics",
@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
       title: "Dynamic Rhythms ML Challenge",
       description:
         "A machine learning pipeline for forecasting power outages from extreme weather events, integrating multi-year storm and outage datasets with predictive modeling, threshold tuning, and interactive performance diagnostics.",
-      image: "../../public/dynamicrythms.png",
+      image: "../../dynamicrythms.png",
       technologies: ["PyTorch", "Python", "Jupyter", "Scikit-Learn", "XGBoost"],
       github: "https://github.com/obelisk2u/DynamicRythms",
     },
